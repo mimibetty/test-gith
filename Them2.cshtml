@@ -1,0 +1,84 @@
+﻿@model PBL3_2.BBL.AccounsAccountInfo
+
+@{
+    ViewBag.Title = "Them2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="page-section features" style="margin: 150px 0px">
+        <div class="container">
+            <h1>Them moi</h1>
+            <br />
+            <br />
+            <form action="~/AccountInfoes/Them2" method="post">
+                <div class="form-group">
+                    <label for="email">Ten dang nhap:</label>
+                    <input type="text" class="form-control" name="Account_name">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Mat khau:</label>
+                    <input type="password" class="form-control" name="Account_password">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Nhap lai mat khau:</label>
+                    <input type="password" class="form-control" name="Retype_Account_password">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Ho va ten:</label>
+                    <input type="text" class="form-control" name="User_name">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">CCCD:</label>
+                    <input type="text" class="form-control" name="Account_CCCD">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Sinh nhat:</label>
+                    <input type="date" class="form-control" name="Account_birthday">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-2">Gioi tinh</label>
+                    <div class="col-md-10">
+                        <select name="GioiTinh" class="form-control">
+                            <option value=True>Nam</option>
+                            <option value=False>Nu</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Chieu cao(cm):</label>
+                    <input type="number" class="form-control" name="Account_Height">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Can nang(kg):</label>
+                    <input type="number" class="form-control" name="Account_Weight">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Sdt:</label>
+                    <input type="text" class="form-control" name="Account_phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="text" class="form-control" name="Account_email">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</main>
